@@ -9,10 +9,12 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
     "pug": "^2.0.3"
   },
   "dependencies": {}

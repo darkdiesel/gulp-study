@@ -4,9 +4,12 @@ var sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 
 var path = {
     build: {
+        dist: 'dist/',
         css: 'dist/assets/css/',
         images: 'dist/assets/images/'
     },
@@ -17,7 +20,7 @@ var path = {
 };
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'images'], function () {
+gulp.task('serve', ['clean','sass', 'images'], function () {
 
     browserSync.init({
         server: "./dist"
@@ -45,7 +48,13 @@ gulp.task('sass', function () {
                 }
             })
         }))
-        //.pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(sass().on('error', sass.logError))
+        .pipe( autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }) )
+        .pipe(sourcemaps.write('.') )
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
 });
