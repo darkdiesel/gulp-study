@@ -6,6 +6,8 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+var     del             = require('del');
+
 
 var path = {
     build: {
@@ -20,7 +22,7 @@ var path = {
 };
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['clean','sass', 'images'], function () {
+gulp.task('serve', ['sass', 'images'], function () {
 
     browserSync.init({
         server: "./dist"
@@ -57,6 +59,11 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.write('.') )
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
+});
+
+// Clean
+gulp.task('clean', function(cb) {
+    del([path.build.dist], cb);
 });
 
 gulp.task('default', ['serve']);
