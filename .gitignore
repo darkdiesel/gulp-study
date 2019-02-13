@@ -1,0 +1,8 @@
+# phpStorm Files
+.idea/
+
+Thumbs.db
+.DS_Store
+
+# Node pacjages
+node_modules
