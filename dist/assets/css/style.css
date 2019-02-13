@@ -1,11 +1,11 @@
 h1 {
   font-weight: bold;
-  color: yellow;
   text-decoration: none;
-  font-size: 44px; }
+  font-size: 33px; }
 
 body {
   background: blue;
-  font-family: monospace; }
+  font-family: monospace;
+  color: yellow; }
 
 /*# sourceMappingURL=style.css.map */
