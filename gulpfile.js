@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 
 var path = {
     build: {
@@ -22,7 +24,8 @@ gulp.task('serve', ['sass', 'images'], function () {
     });
 
     gulp.watch(path.src.scss + '**/*.scss', ['sass']);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch(path.src.images + '*', ['images']);
+    gulp.watch("dist/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('images', function () {
@@ -34,7 +37,15 @@ gulp.task('images', function () {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
     return gulp.src(path.src.scss + '**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(plumber({
+            errorHandler: notify.onError(function (err) {
+                return {
+                    title: 'Styles',
+                    message: err.message
+                }
+            })
+        }))
+        //.pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
 });
