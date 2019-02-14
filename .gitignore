@@ -6,3 +6,5 @@ Thumbs.db
 
 # Node pacjages
 node_modules
+
+yarn-error.log

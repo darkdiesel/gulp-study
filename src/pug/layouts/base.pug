@@ -1,10 +1,13 @@
 include ../partials/variables
 
 doctype html
-html(lang='en')
+html(lang=langHtml)
     head
         include ../partials/head
     body
         include ../partials/header
-        block content
+        .container
+            .row
+                .col-lg-12.p-4
+                    block content
         include ../partials/scripts

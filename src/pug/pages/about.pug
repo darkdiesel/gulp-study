@@ -1,7 +1,26 @@
 extends ../layouts/base
 
 block variables
-    -var pageTitle = "About Shit"
+    -var pageTitle = "About Site"
 
 block content
     h1 About
+
+    .card.text-center
+        .card-header
+            | About Us
+        .card-body
+            h5.card-title Special title treatment
+            p.card-text With supporting text below as a natural lead-in to additional content.
+            a.btn.btn-primary(href='#') Go somewhere
+        .card-footer.text-muted
+            | 2 days ago
+
+    .my-5
+
+    .card.text-white.bg-primary.mb-3(style='max-width: 18rem;')
+        .card-header Info
+        .card-body
+            h5.card-title Primary card title
+            p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card's content.

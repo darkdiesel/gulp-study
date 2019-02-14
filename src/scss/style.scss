@@ -1,14 +1,1 @@
 @import "variables";
-
-$size : 44px !default;
-
-h1 {
-  font-weight: bold;
-  text-decoration: none;
-  font-size: $size;
-}
-body {
-  background: blue;
-  font-family: monospace;
-  color: yellow;
-}
