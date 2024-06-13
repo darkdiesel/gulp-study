@@ -1,0 +1,55 @@
+@mixin button-group-breadcrumb-variant($background, $border) {
+  &:not(:last-child) {
+    &:after {
+      border-left-color: $background;
+    }
+    &:before {
+      border-left-color: $border;
+    }
+  }
+
+  @include hover {
+    &:not(:last-child) {
+      &:after {
+        border-left-color: darken($background, 10%);
+      }
+      &:before {
+        border-left-color: darken($border, 12%);
+      }
+    }
+  }
+
+  &:focus,
+  .focus {
+    &:not(:last-child) {
+      &:after {
+        border-left-color: darken($background, 10%);
+      }
+      &:before {
+        border-left-color: darken($border, 12%);
+      }
+    }
+  }
+
+  &:active,
+  &.active {
+    &:not(:last-child) {
+      &:after {
+        border-left-color: darken($background, 10%);
+      }
+      &:before {
+        border-left-color: darken($border, 12%);
+      }
+    }
+    &:hover,
+    &:focus,
+    &.focus {
+      &:after {
+        border-left-color: darken($background, 17%);
+      }
+      &:before {
+        border-left-color: darken($border, 25%);
+      }
+    }
+  }
+}

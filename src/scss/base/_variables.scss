@@ -1,0 +1,38 @@
+//colors
+$brand-dark: #333333 !default;
+$brand-green: #1abc9c !default;
+$brand-dark-gray: #212121 !default;
+
+$brand-facebook: #3b5998 !default;
+$brand-twitter: #00aced !default;
+$brand-google-plus: #dd4b39 !default;
+$brand-youtube: #bb0000 !default;
+$brand-vk: #45668e !default;
+$brand-skype: #12A5F4 !default;
+
+//font-awesome overrides
+$fa-font-path: "../fonts" !default;
+
+// ====================
+// Bootstrap overrides
+// ====================
+$btn-border-radius: 0 !default;
+$btn-border-radius-sm: 0 !default;
+
+$card-border-radius: 0 !default;
+
+// links
+$link-color: $brand-green;
+$link-hover-color: darken($brand-green, 15%) !default;
+
+//$theme-colors: (
+//    "dark": $brand-dark,
+//    "dark-gray": $brand-dark-gray,
+//    "green": $brand-green,
+//    "facebook": $brand-facebook,
+//    "twitter": $brand-twitter,
+//    "google-plus": $brand-google-plus,
+//    "youtube": $brand-youtube,
+//    "vk": $brand-vk,
+//    "skype": $brand-skype,
+//) !default;

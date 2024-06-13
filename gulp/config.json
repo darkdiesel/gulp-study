@@ -1,0 +1,16 @@
+{
+    "spriteConfig": {
+        "icons": {
+            "src": ["./src/static/img/sprites/icons/*.*"]
+        },
+        "plugins": {
+            "src": ["./src/static/img/sprites/plugins/*.*"]
+        },
+        "cs-socila": {
+            "src": ["./src/static/img/sprites/cs-social/*.*"]
+        },
+        "logos": {
+            "src": ["./src/static/img/sprites/logos/*.*"]
+        }
+    }
+}

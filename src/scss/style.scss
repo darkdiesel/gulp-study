@@ -1,1 +1,10 @@
-@import "variables";
+@import "base/variables";
+@import "libs";
+
+//@import "bootsrap4/bootstrap";
+
+@import "base/fonts";
+@import "base/base";
+@import "header";
+@import "footer";
+@import "background";

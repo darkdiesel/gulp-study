@@ -1,0 +1,135 @@
+// == NAVBAR ==
+
+// TODO: check variables and move to bootstrap/_variables.scss. Optimised for last version of bootstrap
+
+//$navbar-padding-horizontal:         ($spacer / 2) !default;
+//$navbar-padding-vertical:           ($spacer / 2) !default;
+
+$navbar-devider-padding-top: .525rem;
+$navbar-devider-padding-bottom: .525rem;
+
+$navbar-navlink-padding-top: .425rem;
+$navbar-navlink-padding-bottom: .425rem;
+$navbar-navlink-padding-left: 1rem;
+$navbar-navlink-padding-right: 1rem;
+
+$navbar-black-bg: #262626;
+$navbar-black-active-bg: #212121;
+
+$navbar-black-color:                 rgba(255,255,255,.5) !default;
+$navbar-black-hover-color:           rgba(255,255,255,.75) !default;
+$navbar-black-active-color:         $brand-green !default;
+
+$navbar-black-disabled-color:        rgba(255,255,255,.25) !default;
+
+$navbar-black-border-color: $gray-600;
+$navbar-black-border-hover-color: $gray-400;
+$navbar-black-border-active-color: $brand-green;
+
+.navbar {
+    &.navbar-main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar-divider{
+        padding-top: $navbar-devider-padding-top;
+        padding-bottom: $navbar-devider-padding-bottom;
+    }
+}
+
+//navbar top
+.navbar-top{
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    background-color: $navbar-black-active-bg;
+    //border-bottom: 2px solid #000;
+    box-shadow: 0px -3px 18px 3px #52cccc;
+
+    .navbar-nav{
+        .nav-link{
+            + .nav-link {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .nav-item + .nav-item {
+        margin-left: 0;
+    }
+}
+
+// navbar black
+.navbar-black {
+    background-color: $navbar-black-bg;
+
+    .navbar-brand {
+        color: $navbar-black-active-color;
+
+        //@include hover-focus {
+        //    color: $navbar-black-active-color;
+        //}
+    }
+
+    .navbar-nav {
+        .nav-link {
+            padding-top: $navbar-navlink-padding-top;
+            padding-bottom: $navbar-navlink-padding-bottom;
+            padding-left: $navbar-navlink-padding-left;
+            padding-right: $navbar-navlink-padding-right;
+
+            text-transform: uppercase;
+            font-weight: 500;
+
+            color: $navbar-black-color;
+            border-bottom: 4px solid transparent;
+
+            //@include hover-focus {
+            //    color: $navbar-black-hover-color;
+            //    background-color: $navbar-black-active-bg;
+            //    border-bottom-color: $navbar-black-border-hover-color;
+            //}
+
+            + .nav-link {
+                margin-left: 0;
+            }
+        }
+
+        .nav-item + .nav-item {
+            margin-left: 0;
+        }
+
+        .open > .nav-link,
+        .active > .nav-link,
+        .nav-link.open,
+        .nav-link.active {
+            //@include plain-hover-focus {
+            //    color: $navbar-black-active-color;
+            //    background-color: $navbar-black-active-bg;
+            //}
+            border-bottom-color: $navbar-black-border-active-color;
+        }
+
+        .btn{
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }
+
+    .navbar-divider {
+        background-color: rgba(255, 255, 255, .075);
+    }
+}
+
+.header {
+    .header-banner{
+        background: url("../images/bg-top-banner.jpg") center center repeat;
+        background-size: cover;
+    }
+
+    .navbar-main{
+        border-radius: 0;
+        box-shadow: 0 -4px 17px -1px #52cccc;
+    }
+}

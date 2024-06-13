@@ -1,0 +1,7 @@
+//@each $color, $value in $list-group-colors {
+//    @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
+//}
+
+@include list-group-item-variant("dark", $state-dark-bg, $state-dark-text);
+@include list-group-item-variant("dark-gray", $state-dark-gray-bg, $state-dark-gray-text);
+@include list-group-item-variant("green", $state-green-bg, $state-green-text);

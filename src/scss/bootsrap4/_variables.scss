@@ -1,0 +1,42 @@
+// == BUTTONS ==
+$btn-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$btn-colors: map-merge(
+        (
+            "dark": $brand-dark,
+            "dark-gray": $brand-dark-gray,
+            "green": $brand-green,
+            "facebook": $brand-facebook,
+            "twitter": $brand-twitter,
+            "google-plus": $brand-google-plus,
+            "youtube": $brand-youtube,
+            "vk": $brand-vk,
+            "skype": $brand-skype,
+        ),
+        $btn-colors
+);
+
+$list-group-colors: () !default;
+
+$list-group-colors: () map-merge(
+            (
+                "dark": $brand-dark,
+                "dark-gray": $brand-dark-gray,
+                "green": $brand-green
+            ),
+        $list-group-colors
+);
+
+
+// states for list groups
+$state-dark-text: #fff !default;
+$state-dark-bg: $brand-dark !default;
+$state-dark-border: darken($brand-dark, 5%) !default;
+
+$state-dark-gray-text: #a2a2a2 !default;
+$state-dark-gray-bg: $brand-dark-gray !default;
+$state-dark-gray-border: darken($brand-dark-gray, 5%) !default;
+
+$state-green-text: #fff !default;
+$state-green-bg: $brand-green !default;
+$state-green-border: darken($brand-green, 5%) !default;

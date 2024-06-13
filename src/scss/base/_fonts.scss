@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura/jura-book.eot');
+    src: url('../fonts/Jura/jura-book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jura/jura-book.woff') format('woff'),
+    url('../fonts/Jura/jura-book.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura/jura-demibold.eot');
+    src: url('../fonts/Jura/jura-demibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jura/jura-demibold.woff') format('woff'),
+    url('../fonts/Jura/jura-demibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura/jura-light.eot');
+    src: url('../fonts/Jura/jura-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jura/jura-light.woff') format('woff'),
+    url('../fonts/Jura/jura-light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura/jura-medium.eot');
+    src: url('../fonts/Jura/jura-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jura/jura-medium.woff') format('woff'),
+    url('../fonts/Jura/jura-medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+// Exo 2 Expanded Fonts
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-blackexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-blackexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-blackexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-blackexpanded.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-boldexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-boldexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-boldexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-boldexpanded.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-extraboldexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-extraboldexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-extraboldexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-extraboldexpanded.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-extralightexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-extralightexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-extralightexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-extralightexpanded.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-lightexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-lightexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-lightexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-lightexpanded.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-mediumexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-mediumexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-mediumexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-mediumexpanded.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-regularexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-regularexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-regularexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-regularexpanded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-semiboldexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-semiboldexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-semiboldexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-semiboldexpanded.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Expanded';
+    src: url('../fonts/Exo2_ Expanded/exo2-thinexpanded.eot');
+    src: url('../fonts/Exo2_ Expanded/exo2-thinexpanded.woff') format('woff'), url('../fonts/Exo2_ Expanded/exo2-thinexpanded.woff2') format('woff2'), url('../fonts/Exo2_ Expanded/exo2-thinexpanded.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+// Exo
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-blackcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-blackcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-blackcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-blackcondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-boldcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-boldcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-boldcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-boldcondensed.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-extraboldcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-extraboldcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-extraboldcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-extraboldcondensed.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-extralightcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-extralightcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-extralightcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-extralightcondensed.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-lightcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-lightcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-lightcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-lightcondensed.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-mediumcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-mediumcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-mediumcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-mediumcondensed.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-regularcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-regularcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-regularcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-regularcondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-semiboldcondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-semiboldcondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-semiboldcondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-semiboldcondensed.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 Condensed';
+    src: url('../fonts/Exo2_ Condensed/exo2-thincondensed.eot');
+    src: url('../fonts/Exo2_ Condensed/exo2-thincondensed.woff') format('woff'), url('../fonts/Exo2_ Condensed/exo2-thincondensed.woff2') format('woff2'), url('../fonts/Exo2_ Condensed/exo2-thincondensed.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
