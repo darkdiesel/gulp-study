@@ -1,4 +1,4 @@
-# Gulp 3 Study
+# Gulp Study
 
 ## Table of Content
 - [Installation](#installation)
