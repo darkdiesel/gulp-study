@@ -7,7 +7,7 @@
   "author": "Igor Peshkov <igor.peshkov@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^3.0.2",
+    "browser-sync": "^3.0.4",
     "del": "^6.0.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
